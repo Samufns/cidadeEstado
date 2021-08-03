@@ -1,0 +1,20 @@
+
+<div>
+    <p>Selecione o estado</p>
+    <dx-select-box [items]="estados" displayExpr="nome"  
+                   placeholder="Selecione o Estado:" 
+                   [(value)]="estadoValor" 
+                   (onValueChanged)="onSelectEstado($event)">
+    </dx-select-box>
+    <p>Selecione a cidade</p>
+    <dx-select-box [items]="cidades" displayExpr="nome" placeholder="Selecione a Cidade:"></dx-select-box>
+
+</div>
+
+
+
+
+
+
+
+
