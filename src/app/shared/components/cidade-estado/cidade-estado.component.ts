@@ -18,7 +18,7 @@ export class CidadeEstadoComponent implements OnInit {
 
   estadoValor!: EstadoBr;
 
-  //@Input()
+  @Input()
   estadoInicial: String = "";
     
   constructor(private cidadeEstado:WebServiceIbgeService) { }
