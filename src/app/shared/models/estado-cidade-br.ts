@@ -7,6 +7,7 @@ export interface EstadoBr{
             sigla: String,
             nome: String
       ]
+      
            
 }
 

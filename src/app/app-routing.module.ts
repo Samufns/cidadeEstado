@@ -1,4 +1,5 @@
 import { CidadeEstadoComponent } from './shared/components/cidade-estado/cidade-estado.component';
+import { TesteComponent } from './pages/teste/teste.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent, ResetPasswordFormComponent, CreateAccountFormComponent, ChangePasswordFormComponent } from './shared/components';
@@ -11,9 +12,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
 
-
-
-
 const routes: Routes = [
   {
     path: 'tasks',
@@ -21,8 +19,8 @@ const routes: Routes = [
     canActivate: [ AuthGuardService ]
   },
   {
-    path: 'cidadeEstado',
-    component: CidadeEstadoComponent,
+    path: 'teste',
+    component: TesteComponent,
     canActivate: [ AuthGuardService ]
   },
   {
@@ -65,6 +63,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { useHash: true }), DxDataGridModule, DxFormModule, DxSelectBoxModule, BrowserModule, CommonModule],
   providers: [AuthGuardService],
   exports: [RouterModule],
-  declarations: [HomeComponent, ProfileComponent, TasksComponent, CidadeEstadoComponent]
+  declarations: [HomeComponent, ProfileComponent, TasksComponent, TesteComponent, CidadeEstadoComponent]
 })
 export class AppRoutingModule { }

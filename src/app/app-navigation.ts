@@ -18,7 +18,7 @@ export const navigation = [
       },
       {
         text: 'Cidade Estado',
-        path: '/cidadeEstado'
+        path: '/teste'
       }
     ]
   }
